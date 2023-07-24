@@ -15,10 +15,12 @@ Consigli del giorno:
 
 ## SVOLGIMENTO TEORICO
 
-- inserico un **ARRAY** che definisca le varie faccie del dado (da 1 a 6)
+- inserico un **ARRAY** che definisca le varie facce del dado (da 1 a 6)
 
 - chiedo all'utente di inserire un valore da 1 a 6
 
 - faccio scegliere un numero casuale al computer da 1 a 6
+
+- associo il numero al mio **ARRAY**
 
 - vado a decidere il vincitore in base a al numero più alto
