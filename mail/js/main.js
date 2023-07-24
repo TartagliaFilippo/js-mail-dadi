@@ -8,17 +8,26 @@ const emailIndex = [
 ];
 console.table(emailIndex);
 
+const correctEmail = document.getElementById("correct-mail");
+
 // CHIEDO ALL'UTENTE LA MAIL CHE VUOLE INSERIRE
 const userEmail = prompt("inserici una mail");
 console.log(userEmail);
 
+//INSERISCO UNA VARIABILE DI CONTROLLO
+let checkVariable = 0;
+console.log("checkfirst" + checkVariable);
+
 // INSERICO UN CONTROLLO DELLE MAIL DISPONIBILI
 for (let i = 0; i < emailIndex.length; i++) {
-  console.log("variabile i " + i);
-
-  if (userEmail === emailIndex) {
-    console.log("la mail è corretta");
-  } else {
-    console.log("la mail è sbagliata");
+  if (userEmail == emailIndex[i]) {
+    checkVariable = 1;
   }
+}
+console.log("checksecond" + checkVariable);
+
+if ((checkVariable = 1)) {
+  correctEmail.innerHTML = userEmail;
+} else {
+  alert("ricarica la pagina e scrivi una mail corretta");
 }
