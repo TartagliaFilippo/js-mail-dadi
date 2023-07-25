@@ -2,14 +2,16 @@
 const diceFaces = [1, 2, 3, 4, 5, 6];
 
 // CHIEDO DI INSERIRE UN NUMERO DA 1 a 6
-const userChoice = prompt("inserisci un numero da 1 a 6");
+// const userChoice = prompt("inserisci un numero da 1 a 6");
 
 // GENERO UN NUMRO CASUALE DA 1 A 6
-const randomNumber = Math.floor(Math.random() * diceFaces.length) + 1;
+const userChoice = Math.floor(Math.random() * 6) + 1;
+const randomNumber = Math.floor(Math.random() * 6) + 1;
 
 // ASSOCIO IL NUMERO AL MIO ARRAY
-const randomValue = diceFaces[randomNumber];
-console.log(randomValue);
+// const randomNumber = Math.floor(Math.random() * diceFaces.length) + 1;
+// const randomValue = diceFaces[randomNumber];
+// console.log(randomValue);
 
 // OUTPUT INDEX
 const userNumber = document.getElementById("user-number");
