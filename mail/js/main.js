@@ -15,18 +15,18 @@ const userEmail = prompt("inserici una mail");
 console.log(userEmail);
 
 //INSERISCO UNA VARIABILE DI CONTROLLO
-let checkVariable = 0;
+let checkVariable = false;
 console.log("checkfirst" + checkVariable);
 
 // INSERICO UN CONTROLLO DELLE MAIL DISPONIBILI
 for (let i = 0; i < emailIndex.length; i++) {
-  if (userEmail == emailIndex[i]) {
-    checkVariable = 1;
+  if (userEmail === emailIndex[i]) {
+    checkVariable = true;
   }
+  console.log("checksecond" + checkVariable);
 }
-console.log("checksecond" + checkVariable);
 
-if ((checkVariable = 1)) {
+if ((checkVariable = true)) {
   correctEmail.innerHTML = userEmail;
 } else {
   alert("ricarica la pagina e scrivi una mail corretta");
